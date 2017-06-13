@@ -61,6 +61,7 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 3. Now go to the "CALLBACKS" section on the left, select "new" on the top right, select "Custom Callback"
     * Url pattern: `http://<EvenNode_URL>/messages/createSigfox`
     * Use HTTP Method: `POST`
+    * Content Type: `application/json`
     * Body: `{
              "device" : "{device}",
              "time" : "{time}",
