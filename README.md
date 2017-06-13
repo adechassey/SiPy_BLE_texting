@@ -28,7 +28,7 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 2. Add new numbers in the "Verified Caller IDs" (phone numbers of the contacts you wish to send messages)
 
 <p align="center">
-    <img width="70%" height="70%" src="img/newNumber.png">
+    <img src="img/newNumber.png">
 </p>
 
 3. Take note of your generated Twilio __Phone Number__, __ACCOUNT SID__ and __Auth TOKEN__
