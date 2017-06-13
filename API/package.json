@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scotch-io/node-crud-course.git"
+    "url": "git+https://github.com/AntoinedeChassey/SiPy_BLE_texting.git"
   },
   "author": "Antoine de Chassey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scotch-io/node-crud-course/issues"
+    "url": "https://github.com/AntoinedeChassey/SiPy_BLE_texting/issues"
   },
-  "homepage": "https://github.com/scotch-io/node-crud-course#readme",
+  "homepage": "https://github.com/AntoinedeChassey/SiPy_BLE_texting",
   "dependencies": {
     "body-parser": "^1.15.2",
     "connect-flash": "^0.1.1",
