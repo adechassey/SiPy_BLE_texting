@@ -98,6 +98,6 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 
 __Have fun!__ _Sorry this project is a bit complicated due to all the different technologies used_.
 
-Above all, it is to show what you could do with a __SIGFOX__ and __BLE__, thanks to __SiPy__!
+Above all, it is to show what you could do with __SIGFOX__ and __BLE__, thanks to __SiPy__!
 
 > *Antoine de Chassey*
