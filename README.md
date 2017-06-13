@@ -56,6 +56,7 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 7. Follow the Git deployment guide: <https://www.evennode.com/docs/git-deployment>
 8. You may have to wait 1 or 2 minutes for the app to start-up
 9. Check if it runs correctly, you can debug with the "app logs": `https://admin.evennode.com/......./logs`
+10. Create one or two contacts (use valid phone numbers, same as the ones you entered on Twilio)
 
 ### Sigfox Backend Callback
 1. Log in __[here](https://backend.sigfox.com/auth/login)__
@@ -79,30 +80,34 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 ### Android
 1. Download the apk file from <https://github.com/AntoinedeChassey/SiPy_BLE_texting/raw/master/Android/BLE_to_SiPy.apk> (or find it in _SiPy_BLE_texting/Android/BLE_to_SiPy.apk_)
 2. Click on it and select "install" (you might have to authorize unsigned apps to be installed on your device)
-3. Launch the app and connect to your SiPy after authorizing Bluetooth
+
+
+## Usage
+
+1. Launch the Android app and connect to your SiPy after authorizing Bluetooth
 
 <p align="center">
     <img width="50%" height="50%" src="img/device.png">
 </p>
 
-4. Press the `+` button to select a contact
-5. At first boot, you need to update the local SQLite database with the contacts you created online (on the EvenNode Node.js app), you will be prompted to do so
-6. Enter the name of your Node.js app (the part after `http://` and before `.evennode.com`)
+2. Press the `+` button to select a contact
+3. At first boot, you need to update the local SQLite database with the contacts you created online (on the EvenNode Node.js app), you will be prompted to do so
+4. Enter the name of your Node.js app (the part after `http://` and before `.evennode.com`)
 
 <p align="center">
     <img width="50%" height="50%" src="img/contact.png">
 </p>
 
-7. Validate, you should now see the same contacts you created online!
-8. Pick one, enter some text and send!
+5. Validate, you should now see the same contacts you created online!
+6. Pick one, enter some text and send!
 
 <p align="center">
     <img width="50%" height="50%" src="img/message.png">
 </p>
 
-9. Wait 5 seconds and go back to your Node.js app, in the "Messages" section
-10. You should now see the message you just sent with BLE
-11. If your contact recipient has a valid phone number activated on Twilio, he should have received the text message by SMS
+7. Wait 5 seconds and go back to your Node.js app, in the "Messages" section
+8. You should now see the message you just sent with BLE
+9. If your contact recipient has a valid phone number __activated on Twilio__, he should have received the text message by SMS!
 
 
 _Sorry this project is a bit complicated due to all the different technologies used_.
