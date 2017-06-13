@@ -126,9 +126,19 @@ function processCreate(req, res) {
         contactsController.getContactByMessageId(message.contactId, function (err, contact) {
             if (contact)
                 Twilio.sendTwilio(message, contact.phone, function(err, result) {
-                    if (result === undefined)
+                    if (result === undefined){
                         req.flash('error', 'But could not send message with Twilio, please verify the phone number is correct and verified on <a href="https://www.twilio.com/" target="_blank">Twilio</a>.');
-                    else
+                        /*
+                        Twilio.activateNewNumber(message.contactId, contact.phone, function (err, callerId) {
+                            if (err) {
+                                console.error(err);
+                            } else {
+                                req.flash('success', 'This phone number is now verified on Twilio!');
+                                console.log(callerId.sid);
+                            }
+                        });
+                        */
+                    } else
                         req.flash('success', 'Successfully sent message with Twilio!'); //console.log("Twilio response: " + result.sid);
                     // redirect to the newly created message
                     res.redirect('/messages/' + message.slug);
