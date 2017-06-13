@@ -1,0 +1,39 @@
+<div class="jumbotron text-center">
+    <h1>Create a Message</h1>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <% if (errors.length > 0) { %>
+        <div class="alert alert-danger">
+            <% for (error of errors) { %>
+            <%= error %><br>
+            <% } %>
+        </div>
+        <% } %>
+
+        <form enctype='application/json' action="/messages/create" method="POST">
+
+            <div class="form-group">
+                <label>Device</label>
+                <input type="text" name="device" class="form-control" value="AD931E">
+            </div>
+
+            <div class="form-group">
+                <label>Time</label>
+                <input type="text" name="time" class="form-control" value="1496218985">
+            </div>
+
+            <div class="form-group">
+                <label>Data in HEX <i>(first Byte is the contactId, the 11 remaining Bytes correspond to the message content)</i></label>
+                <input type="text" name="data" class="form-control" value="0548657921">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg">Create</button>
+            </div>
+        </form>
+
+    </div>
+</div>

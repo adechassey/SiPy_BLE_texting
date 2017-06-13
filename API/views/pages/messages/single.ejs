@@ -1,0 +1,12 @@
+<% if (success.length > 0) { %>
+<div class="alert alert-success"><%= success %></div>
+<% } if (error.length > 0) { %>
+<div class="alert alert-danger"><%- error %></div>
+<% } %>
+
+<div class="jumbotron text-center">
+    <h1><%= message.content %></h1>
+    <p>Device: <%= message.device %></p>
+    <p>Time: <%= new Date(message.time).toLocaleString() %></p>
+    <p>ContactId: <%= message.contactId %></p>
+</div>

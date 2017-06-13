@@ -1,0 +1,36 @@
+<div class="jumbotron text-center">
+    <h1>All Contacts</h1>
+</div>
+
+<% if (success.length > 0) { %>
+<div class="alert alert-success"><%= success %></div>
+<% } %>
+
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+    <tr>
+        <th>Contact id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <% for (var contact of contacts) { %>
+    <tr>
+        <td><%= contact.contactId %></td>
+        <td><%= contact.firstname %></td>
+        <td><%= contact.lastname %></td>
+        <td><%= contact.phone %></td>
+        <td>
+            <a href="/contacts/<%= contact.slug %>" class="btn btn-sm btn-primary">View</a>
+            <a href="/contacts/edit/<%= contact.slug %>" class="btn btn-sm btn-primary">Edit</a>
+            <a href="/contacts/delete/<%= contact.slug %>" class="btn btn-sm btn-danger">Delete</a>
+        </td>
+    </tr>
+    <% } %>
+
+    </tbody>
+</table>

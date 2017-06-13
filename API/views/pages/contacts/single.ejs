@@ -1,0 +1,9 @@
+<% if (success.length > 0) { %>
+<div class="alert alert-success"><%= success %></div>
+<% } %>
+
+<div class="jumbotron text-center">
+    <h1><%= contact.firstname %> <%= contact.lastname %></h1>
+    <p>ContactId: <%= contact.contactId %></p>
+    <p>Phone: <%= contact.phone %></p>
+</div>

@@ -1,0 +1,35 @@
+<div class="jumbotron text-center">
+    <h1>All Messages</h1>
+</div>
+
+<% if (success.length > 0) { %>
+<div class="alert alert-success"><%= success %></div>
+<% } %>
+
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+    <tr>
+        <th>Device</th>
+        <th>Time</th>
+        <th>ContactId</th>
+        <th>Content</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <% for (var message of messages) { %>
+    <tr>
+        <td><%= message.device %></td>
+        <td><%= new Date(message.time).toLocaleString() %></td>
+        <td><%= message.contactId %></td>
+        <td><%= message.content %></td>
+        <td>
+            <a href="/messages/<%= message.slug %>" class="btn btn-sm btn-primary">View</a>
+            <a href="/messages/delete/<%= message.slug %>" class="btn btn-sm btn-danger">Delete</a>
+        </td>
+    </tr>
+    <% } %>
+
+    </tbody>
+</table>
