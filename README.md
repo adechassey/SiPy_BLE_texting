@@ -74,7 +74,7 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 4. Select "OK" to validate
     
 ### Android
-1. Download the apk file from <https://github.com/AntoinedeChassey/SiPy_BLE_texting/blob/master/Android/BLE_to_SiPy.apk> (or find it in _SiPy_BLE_texting/Android/BLE_to_SiPy.apk_)
+1. Download the apk file from <https://github.com/AntoinedeChassey/SiPy_BLE_texting/raw/master/Android/BLE_to_SiPy.apk> (or find it in _SiPy_BLE_texting/Android/BLE_to_SiPy.apk_)
 2. Click on it and select "install" (you might have to authorize unsigned apps to be installed on your device)
 3. Connect to your SiPy after authorizing Bluetooth
 
@@ -102,8 +102,10 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 11. If your contact recipient has a valid phone number activated on Twilio, he should have received the text message by SMS
 
 
-__Have fun!__ _Sorry this project is a bit complicated due to all the different technologies used_.
+_Sorry this project is a bit complicated due to all the different technologies used_.
 
 Above all, it is to show what you could do with __SIGFOX__ and __BLE__, thanks to __SiPy__!
+
+__Have fun!__
 
 > *Antoine de Chassey*
