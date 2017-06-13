@@ -77,7 +77,7 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 ### Android
 1. Download the apk file from <https://github.com/AntoinedeChassey/SiPy_BLE_texting/raw/master/Android/BLE_to_SiPy.apk> (or find it in _SiPy_BLE_texting/Android/BLE_to_SiPy.apk_)
 2. Click on it and select "install" (you might have to authorize unsigned apps to be installed on your device)
-3. Connect to your SiPy after authorizing Bluetooth
+3. Launch the app and connect to your SiPy after authorizing Bluetooth
 
 <p align="center">
     <img width="50%" height="50%" src="img/device.png">
