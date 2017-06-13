@@ -40,6 +40,10 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 6. Set all the variables in `.env` with your own information
 
 <p align="center">
+    <img src="img/mongo.png">
+</p>
+
+<p align="center">
     <img src="img/env.png">
 </p>
 
