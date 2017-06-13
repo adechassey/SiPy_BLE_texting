@@ -54,6 +54,8 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.co
 </p>
 
 7. Follow the Git deployment guide: <https://www.evennode.com/docs/git-deployment>
+8. You may have to wait 1 or 2 minutes for the app to start-up
+9. Check if it runs correctly, you can debug with the "app logs": `https://admin.evennode.com/......./logs`
 
 ### Sigfox Backend Callback
 1. Log in __[here](https://backend.sigfox.com/auth/login)__
