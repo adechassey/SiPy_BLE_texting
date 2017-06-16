@@ -25,7 +25,7 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.
 
 ### Twilio
 1. Sign up for free __[here](https://www.twilio.com/try-twilio)__
-2. Add new numbers in the "Verified Caller IDs" (phone numbers of the contacts you wish to send messages)
+2. Add new numbers in the "Verified Caller IDs" section (phone numbers of the contacts you wish to send messages)
 
 <p align="center">
     <img src="img/newNumber.png">
@@ -56,7 +56,7 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.
 7. Follow the Git deployment guide: <https://www.evennode.com/docs/git-deployment>
 8. You may have to wait 1 or 2 minutes for the app to start-up
 9. Check if it runs correctly, you can debug with the "app logs": `https://admin.evennode.com/......./logs`
-10. Create one or two contacts (use valid phone numbers, same as the ones you entered on Twilio)
+10. Create one or two contacts in order to fill the DB (use valid phone numbers, same as the ones you entered on Twilio)
 
 ### Sigfox Backend Callback
 1. Log in __[here](https://backend.sigfox.com/auth/login)__
