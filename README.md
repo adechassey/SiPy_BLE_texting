@@ -17,7 +17,7 @@ This repository includes:
 - an Android phone with Bluetooth (BLE supported)
 
 ## Installation
-Clone the repo: `git clone https://github.com/AntoinedeChassey/https://github.com/AntoinedeChassey/SiPy_BLE_texting.git`
+Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.git`
 
 ### SiPy
 1. [Activate](https://backend.sigfox.com/activate/pycom) your SiPy on the Sigfox Backend _(you can follow __[this](https://docs.pycom.io/pycom_esp32/pycom_esp32/tutorial/includes/sigfox-start.html)__ tutorial)_
