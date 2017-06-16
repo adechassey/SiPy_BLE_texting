@@ -21,7 +21,7 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.
 
 ### SiPy
 1. [Activate](https://backend.sigfox.com/activate/pycom) your SiPy on the Sigfox Backend _(you can follow __[this](https://docs.pycom.io/pycom_esp32/pycom_esp32/tutorial/includes/sigfox-start.html)__ tutorial)_
-2. Flash the SiPy with the firmware located in this folder: _SiPy_BLE_texting/__SiPy___ (you can use the Pymakr Plugin, I __strongly recommend__ to read __[this](https://docs.pycom.io/pycom_esp32/pycom_esp32/getstarted.html#)__ guide
+2. Flash the SiPy with the firmware located in this folder: _SiPy_BLE_texting/__SiPy___ (you can use the Pymakr Plugin, I __strongly recommend__ to read __[this](https://docs.pycom.io/pycom_esp32/pycom_esp32/getstarted.html#)__ guide)
 
 ### Twilio
 1. Sign up for free __[here](https://www.twilio.com/try-twilio)__
