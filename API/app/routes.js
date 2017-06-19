@@ -33,7 +33,7 @@ router.get('/messages/delete/:slug', messagesController.deleteMessage);
 router.get('/messages/:slug', messagesController.showSingle);
 
 /************************
- C0NTACT
+ CONTACT
  ************************/
 // contact routes
 router.get('/contacts', contactsController.showContacts);

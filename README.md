@@ -56,11 +56,28 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.
     <img src="img/env.png">
 </p>
 
-5. Once done, make sure you are in the API folder in order to ONLY push the web app to Evennode and not the whole repository: `cd SiPy_BLE_texting/API`
+5. Once done, make sure you are in the API folder in order to ONLY push the web app to Evennode and not the whole repository previously cloned: `cd SiPy_BLE_texting/API`
 6. Follow the Git deployment guide from the beginning: <https://www.evennode.com/docs/git-deployment>
 7. You may have to wait 1 or 2 minutes for the app to start-up
 8. Check if it runs correctly, you can debug with the "app logs": `https://admin.evennode.com/......./logs`
 9. Create one or two contacts in order to fill the DB (use valid phone numbers, same as the ones you entered on Twilio)
+
+#### But how does the API work?
+
+Briefly, the Node.js web application has the following endpoints configured (you can have a look in _SiPy_BLE_texting\API\app\routes.js_). The two main ones are in red.
+
+<p align="center">
+    <img src="img/endpoints.png">
+</p>
+
+* `/messages/createSigfox` is called from the Sigfox Backend in order to store the incoming message from the SiPy and send it by SMS with Twilio.
+
+The data sent from the SiPy is composed as the following:
+    - The first byte (unsigned: from 0 to 255, which equals 2^8 - 1) represents the "contactId" (-> we can store 256 different contacts).
+    - The eleven remaining bytes (chars) represent the "message" content.
+
+* `/contactsAndroid` is called from the Android applicaiton to retrieve the contacts stored in the Mongo database (they are then stored in the Android SQLite DB so you can access the contact list without Internet).
+
 
 ### Sigfox Backend Callback
 1. Log in __[here](https://backend.sigfox.com/auth/login)__
