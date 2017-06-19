@@ -73,8 +73,8 @@ Briefly, the Node.js web application has the following endpoints configured (you
 * `/messages/createSigfox` is called from the Sigfox Backend in order to store the incoming message from the SiPy and send it by SMS with Twilio.
 
 The data sent from the SiPy is composed as the following:
-    - The first byte (unsigned: from 0 to 255, which equals 2^8 - 1) represents the "contactId" (-> we can store 256 different contacts).
-    - The eleven remaining bytes (chars) represent the "message" content.
+    * The first byte (unsigned: from 0 to 255, which equals 2^8 - 1) represents the "contactId" (-> we can store 256 different contacts).
+    * The eleven remaining bytes (chars) represent the "message" content.
 
 * `/contactsAndroid` is called from the Android applicaiton to retrieve the contacts stored in the Mongo database (they are then stored in the Android SQLite DB so you can access the contact list without Internet).
 
