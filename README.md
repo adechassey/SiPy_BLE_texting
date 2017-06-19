@@ -56,10 +56,11 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.
     <img src="img/env.png">
 </p>
 
-5. Follow the Git deployment guide: <https://www.evennode.com/docs/git-deployment>
-6. You may have to wait 1 or 2 minutes for the app to start-up
-7. Check if it runs correctly, you can debug with the "app logs": `https://admin.evennode.com/......./logs`
-8. Create one or two contacts in order to fill the DB (use valid phone numbers, same as the ones you entered on Twilio)
+5. Once done, make sure you are in the API folder in order to ONLY push the web app to Evennode and not the whole repository: `cd SiPy_BLE_texting/API`
+6. Follow the Git deployment guide from the beginning: <https://www.evennode.com/docs/git-deployment>
+7. You may have to wait 1 or 2 minutes for the app to start-up
+8. Check if it runs correctly, you can debug with the "app logs": `https://admin.evennode.com/......./logs`
+9. Create one or two contacts in order to fill the DB (use valid phone numbers, same as the ones you entered on Twilio)
 
 ### Sigfox Backend Callback
 1. Log in __[here](https://backend.sigfox.com/auth/login)__
