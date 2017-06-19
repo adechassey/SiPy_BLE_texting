@@ -41,9 +41,12 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.
 1. Sign up for free __[here](https://www.evennode.com/new-account)__
 2. Log in EvenNode and create a Node.js free plan
 3. Make sure to set the MongoDB password
-4. Now go into the cloned API directory: `cd SiPy_BLE_texting/API`
-5. Copy the .env.example to your own file: `cp .env.example .env`
-6. Set all the variables in `.env` with your own information
+4. Now go in the "Environment vars" section (https://admin.evennode.com/a/d/<YOUR_APP_NAME>/environment-vars) and set the following variables:
+    * `SECRET` : `<A great password>`
+    * `DB_URI` : `mongodb://<user>:<pass>@<host:port>/<dbname>`
+    * `accountSid` : `<Your Account SID from www.twilio.com/console>`
+    * `authToken` : `<Your Auth Token from www.twilio.com/console>`
+    * `numberFrom` : `<Your Twilio phone number>`
 
 <p align="center">
     <img src="img/mongo.png">
@@ -53,10 +56,10 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.
     <img src="img/env.png">
 </p>
 
-7. Follow the Git deployment guide: <https://www.evennode.com/docs/git-deployment>
-8. You may have to wait 1 or 2 minutes for the app to start-up
-9. Check if it runs correctly, you can debug with the "app logs": `https://admin.evennode.com/......./logs`
-10. Create one or two contacts in order to fill the DB (use valid phone numbers, same as the ones you entered on Twilio)
+5. Follow the Git deployment guide: <https://www.evennode.com/docs/git-deployment>
+6. You may have to wait 1 or 2 minutes for the app to start-up
+7. Check if it runs correctly, you can debug with the "app logs": `https://admin.evennode.com/......./logs`
+8. Create one or two contacts in order to fill the DB (use valid phone numbers, same as the ones you entered on Twilio)
 
 ### Sigfox Backend Callback
 1. Log in __[here](https://backend.sigfox.com/auth/login)__
