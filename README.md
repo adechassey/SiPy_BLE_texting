@@ -13,7 +13,7 @@ This repository includes:
 
 ## Hardware Requirements
 
-- a [SiPy](https://www.pycom.io/product/sipy/) board
+- a [SiPy](https://www.pycom.io/product/sipy/) board (+ an expansion board used for flashing)
 - an Android phone with Bluetooth (BLE supported)
 
 ## Installation
