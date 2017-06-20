@@ -7,6 +7,9 @@ This repository includes:
 - an Android application to communicate to the SiPy with Bluetooth _BLE_
 - the API registering requests from the Sigfox Backend and forwarding them by SMS with Twilio
 
+A video presentation is available [here](https://www.hackster.io/antoine-de-chassey/sigfox-texting-with-sipy-3316b4)!
+
+Below is a diagram showing how the system works:
 <p align="center">
     <img src="img/presentation.png?raw=true">
 </p>
