@@ -45,19 +45,22 @@ Clone the repo: `git clone https://github.com/AntoinedeChassey/SiPy_BLE_texting.
 2. Log in EvenNode and create a Node.js free plan
 3. Make sure to set the MongoDB password
 4. Now go in the "Environment vars" section (https://admin.evennode.com/a/d/<YOUR_APP_NAME>/environment-vars) and set the following variables:
-    * `SECRET` : `<A great password>`
-    * `DB_URI` : `mongodb://<user>:<pass>@<host:port>/<dbname>`
-    * `accountSid` : `<Your Account SID from www.twilio.com/console>`
-    * `authToken` : `<Your Auth Token from www.twilio.com/console>`
-    * `numberFrom` : `<Your Twilio phone number>`
 
-<p align="center">
-    <img src="img/mongo.png">
-</p>
+Name | Value
+------------ | -------------
+SECRET | A great password
+DB_URI | mongodb://user:pass@host:port/dbname
+accountSid | Your Account SID from www.twilio.com/console
+authToken | Your Auth Token from www.twilio.com/console
+numberFrom | Your Twilio phone number
 
-<p align="center">
-    <img src="img/env.png">
-</p>
+    <p align="center">
+        <img src="img/mongo.png">
+    </p>
+
+    <p align="center">
+        <img src="img/env.png">
+    </p>
 
 5. Once done, make sure you are in the API folder in order to ONLY push the web app to Evennode and not the whole repository previously cloned: `cd SiPy_BLE_texting/API`
 6. Follow the Git deployment guide from the beginning: <https://www.evennode.com/docs/git-deployment>
@@ -90,7 +93,7 @@ The data sent from the SiPy is composed as the following:
     * Url pattern: `http://<EvenNode_URL>/messages/createSigfox`
     * Use HTTP Method: `POST`
     * Content Type: `application/json`
-    * Body: 
+    * Body:
     ```javascript
     {
         "device" : "{device}",
@@ -104,7 +107,7 @@ The data sent from the SiPy is composed as the following:
 </p>
 
 4. Select "OK" to validate
-    
+
 ### Android
 1. Download the apk file from <https://github.com/AntoinedeChassey/SiPy_BLE_texting/raw/master/Android/BLE_to_SiPy.apk> (or find it in _SiPy_BLE_texting/Android/BLE_to_SiPy.apk_)
 2. Click on it and select "install" (you might have to authorize unsigned apps to be installed on your device)
