@@ -90,12 +90,14 @@ The data sent from the SiPy is composed as the following:
     * Url pattern: `http://<EvenNode_URL>/messages/createSigfox`
     * Use HTTP Method: `POST`
     * Content Type: `application/json`
-    * Body: ```javascript
-            {
-                "device" : "{device}",
-                "time" : "{time}",
-                "data" : "{data}"
-            }```
+    * Body: 
+    ```javascript
+    {
+        "device" : "{device}",
+        "time" : "{time}",
+        "data" : "{data}"
+    }
+    ```
 
 <p align="center">
     <img src="img/backend.png">
