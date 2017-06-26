@@ -54,13 +54,13 @@ accountSid | Your Account SID from www.twilio.com/console
 authToken | Your Auth Token from www.twilio.com/console
 numberFrom | Your Twilio phone number
 
-    <p align="center">
-        <img src="img/mongo.png">
-    </p>
+<p align="center">
+    <img src="img/mongo.png">
+</p>
 
-    <p align="center">
-        <img src="img/env.png">
-    </p>
+<p align="center">
+    <img src="img/env.png">
+</p>
 
 5. Once done, make sure you are in the API folder in order to ONLY push the web app to Evennode and not the whole repository previously cloned: `cd SiPy_BLE_texting/API`
 6. Follow the Git deployment guide from the beginning: <https://www.evennode.com/docs/git-deployment>
