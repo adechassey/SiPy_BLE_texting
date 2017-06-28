@@ -141,6 +141,11 @@ The data sent from the SiPy is composed as the following:
 9. If your contact recipient has a valid phone number __activated on Twilio__, he should have received the text message by SMS!
 
 
+## TODO - Going Further
+- [ ] create a dictionnary to parse long sentences
+- [ ] create a cross-platform more design and user friendly app
+
+
 _Sorry this project is a bit complicated due to all the different technologies used_.
 
 Above all, it is to show what you could do with __SIGFOX__ and __BLE__, thanks to __SiPy__!
