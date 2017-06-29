@@ -2,6 +2,11 @@ from network import Bluetooth
 from network import Sigfox
 import socket
 
+# init Sigfox for RCZ1 (Europe)
+sigfox = Sigfox(mode=Sigfox.SIGFOX, rcz=Sigfox.RCZ1)
+# create a Sigfox socket
+s = socket.socket(socket.AF_SIGFOX, socket.SOCK_RAW)
+
 bluetooth = Bluetooth()
 bluetooth.set_advertisement(name='SiPy', service_uuid=b'1234567890123456')
 sigfoxBroadcastStatus = 2
@@ -48,10 +53,6 @@ char1_cb = chr1.callback(trigger=Bluetooth.CHAR_WRITE_EVENT | Bluetooth.CHAR_REA
 def sendSigfoxMessage(payload):
     global sigfoxBroadcastStatus
     sigfoxBroadcastStatus = 0
-    # init Sigfox for RCZ1 (Europe)
-    sigfox = Sigfox(mode=Sigfox.SIGFOX, rcz=Sigfox.RCZ1)
-    # create a Sigfox socket
-    s = socket.socket(socket.AF_SIGFOX, socket.SOCK_RAW)
     # make the socket blocking
     s.setblocking(True)
     # configure it as uplink only
