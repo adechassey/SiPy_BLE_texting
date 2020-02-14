@@ -1,5 +1,7 @@
 # [Sigfox](http://www.sigfox.com/) texting with [SiPy](https://www.pycom.io/product/sipy/)
 
+<a href="https://www.buymeacoffee.com/antoine" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
+
 You wish you could send some short SMS with __no SIM card__ and from almost anywhere? Well you can with Sigfox and BLE!
 
 This repository includes:
