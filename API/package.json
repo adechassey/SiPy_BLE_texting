@@ -26,7 +26,7 @@
     "express-ejs-layouts": "^2.2.0",
     "express-session": "^1.14.0",
     "express-validator": "^2.20.8",
-    "mongoose": "^4.5.8",
+    "mongoose": "^5.9.0",
     "twilio": "latest",
     "socket.io": "latest",
     "jquery": "latest",
